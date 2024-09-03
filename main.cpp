@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include <iomanip> // Para std::setw e std::setprecision
+#include <iomanip> 
 
 using namespace std;
 
@@ -25,7 +25,6 @@ double bissecao(double (*f)(double), double a, double b, double tol, int interru
     int iteracoes = 0;
     double E_ideal = (b - a) / 2.0;
 
-    // Cabeçalho da tabela
     cout << fixed << setprecision(6);
     cout << setw(4) << "N" << setw(12) << "A" << setw(12) << "B" << setw(12) << "x_ns" 
          << setw(12) << "f(x_ns)" << setw(12) << "f(A)" << setw(12) << "f(B)" 
@@ -59,7 +58,7 @@ double bissecao(double (*f)(double), double a, double b, double tol, int interru
 
         if (iteracoes == interrupcao) {
             cout << "Limite de iteracoes alcancado." << endl;
-            return c;  // Retorna o valor aproximado encontrado até agora
+            return c;  
         }
     }
 
