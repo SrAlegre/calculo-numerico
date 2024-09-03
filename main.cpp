@@ -58,7 +58,7 @@ double bissecao(double (*f)(double), double a, double b, double tol, int interru
         iteracoes++;
 
         if (iteracoes == interrupcao) {
-            cout << "Limite de iteracoes." << endl;
+            cout << "Limite de iteracoes alcancado." << endl;
             return c;  // Retorna o valor aproximado encontrado até agora
         }
     }
